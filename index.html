@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css.css">
-  <title>Document</title>
+  <title>Navegacion resposive, inspirada por la de Matuzo</title>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <button>Btn</button>
-      <li>
-        Sasa
-      </li>
-      <li>
-        Pasa
-      </li>
-      <li>
-        Flasa
-      </li>
-    </ul>
-  </nav>
+  <header>
+    <p><a href="#">this.sasaSavicPerusina</a></p>
+    <nav>
+      <!-- role list devuelve a VoiceOwer anunciar numero de items -->
+      <ul role="list">
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <!-- aria-current implica que es la pagina actual, la usamos tambien como selector en css -->
+          <a aria-current="page" href="#">Proyectos</a>
+        </li>
+        <li>
+          <a href="#">Intereses</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-
+  <div>
+    <picture>
+      <source media="(max-width: 65rem)" srcset="/card-small.png" />
+      <source media="(min-width: 65.00001rem)" srcset="/card-big.pmg" />
+      <img src="/card-big.png" alt="Chris standing up holding his daughter Elva" />
+    </picture>
+  </div>
 </body>
 </html>
