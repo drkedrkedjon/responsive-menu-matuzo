@@ -1,0 +1,37 @@
+/*
+UL transparente
+SVG color y animacion X
+Position absolute en movil
+*/
+
+
+
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+  ul {
+    ---nav-direction: row;
+    /* flex-direction: row; */
+  }
+}
+ul {
+  flex-direction: var(---nav-direction, column);
+  /* flex-direction: column; */
+}
