@@ -11,7 +11,8 @@
 
   <header>
     <p><a href="#">this.sasaSavicPerusina</a></p>
-    <nav>
+    <!-- Crear Landmark con aria-label -->
+    <nav aria-label="Main">
       <!-- role list devuelve a VoiceOwer anunciar numero de items -->
       <ul role="list">
         <li>
@@ -30,13 +31,23 @@
       </ul>
     </nav>
   </header>
+  
+  <template id="burger-template">
+    <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+      <svg width="24" height="24" aria-hidden="true">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z">
+      </svg>
+    </button>
+  </template>
 
+
+<!-- 
   <div>
     <picture>
       <source media="(max-width: 65rem)" srcset="/card-small.png" />
-      <source media="(min-width: 65.00001rem)" srcset="/card-big.pmg" />
-      <img src="/card-big.png" alt="Chris standing up holding his daughter Elva" />
+      <source media="(min-width: 65.00001rem)" type="image/webp" srcset="/card-big.webp" />
+      <img src="/card-small.png" alt="Chris standing up holding his daughter Elva" />
     </picture>
-  </div>
+  </div> -->
 </body>
 </html>
